@@ -10,7 +10,8 @@ Hey everybody, this is Amphy from nowhere in particular. I believe I've done it 
 
 I've written this guide to require as little technical know-how as possible. Everything should be pretty cut and dry. That being said, I'm a technical person myself. So, if I wrote things a little *too* technically, please let me know so I can refine things and/or write in some guard-rails to help the newbies out.
 
-## Before we get started, please be aware that following these steps will wipe your SD card.
+>[!WARNING]
+>**Before we get started, please be aware that following these steps will wipe your SD card.**
 
 There's no way around this that I'm aware of - we're going to need to write Rocknix to the SD card, and that means yeeting your data. I highly recommend either **doing this before you set everything up on your RP5** or **making a complete backup of your SD card to a safe place**. Updating Rocknix afterward should be entirely safe, barring any surprises - it's just the initial setup that requires a wipe.
 
@@ -69,11 +70,17 @@ You will need:
 21. Open **Network Settings** again. **Make a note of the IP address - this is super important**. If you don't see an IP address there (4 groups of numbers with dots between them), press B to go back to the previous menu, then press A again - this will reload the Network Settings menu. (Note: On the latest version of Rocknix, I encountered a bug where the WiFi SSID list was empty while "Enable SSH" was turned on. You may need to turn it off temporarily to get WiFi to connect the first time.)
 22. Back to your computer! Now's a good time to make sure it's on the same WiFi network that your RP5 is using.
 23. Open **Terminal**. On Windows, just open the 🪟Start menu and type in 'terminal'. The first app result should be Terminal (with a "`>_`" on the icon). Open that.
-24. Type in the following text. Please note that all commands from now on need to be typed **exactly** as you see them here, they're case-sensitive. `ssh root@`
+24. Type in the following text. Please note that all commands from now on need to be typed **exactly** as you see them here, they're case-sensitive.
+```bat
+ssh root@
+```
 25. Without typing in any spaces or typing Enter or anything: **type in the IP address** from step 20. So, for example, if your IP is "192.168.12.34", it would look like this all together: `ssh` `root​@​192.168.12.34`
 26. **Press Enter** to start the SSH process. If you're asked if you want to continue connecting, and that the "authenticity" can't be established, just type `yes` and press Enter.
 27. You'll be prompted for a password. **Type in the password from step 18** and press Enter. (You won't see anything while you type - that's normal!)
-28. You should get "ROCKNIX" in big letters - which means it's ready! Finally, we can use the command which was the whole reason we needed to do all this to begin with. Just type the following and press Enter. `chmod -R 777 /storage`
+28. You should get "ROCKNIX" in big letters - which means it's ready! Finally, we can use the command which was the whole reason we needed to do all this to begin with. Just type the following and press Enter.
+```bash
+chmod -R 777 /storage
+```
 
 Give it a few seconds, and... that's it! When it's done, it should just prompt you to type something else if you want, kind of its way of saying it's "ready and waiting" (the ▂ symbol will show up again, like it did before you typed anything on the final step there).
 
