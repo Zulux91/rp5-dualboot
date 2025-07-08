@@ -91,7 +91,8 @@ You now have an Android handheld that can optionally boot into Rocknix. Nice!
 
 If you just followed the instructions, you're probably still on Rocknix. Just reboot the device (via the Rocknix main menu) to get back to Android. You'll always go back to Android by default... assuming you didn't change Rocknix to be the default OS of course :) That's possible but something I chose to omit from this guide, as attempting to boot this way with a failed/removed/non-Rocknix-enabled SD card could cause headaches.
 
-**Whenever you want to go back to Rocknix**, just follow **steps 11-14** again! This process will likely start to feel pretty intuitive/easy after doing it a few times.
+> [!NOTE]  
+> Whenever you want to go back to Rocknix**, just follow **steps 11-14** again! This process will likely start to feel pretty intuitive/easy after doing it a few times.
 
 ### Tips, tricks, Q&A, etc:
 
