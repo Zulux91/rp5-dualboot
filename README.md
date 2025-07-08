@@ -78,7 +78,7 @@ ssh root@
 26. **Press Enter** to start the SSH process. If you're asked if you want to continue connecting, and that the "authenticity" can't be established, just type `yes` and press Enter.
 27. You'll be prompted for a password. **Type in the password from step 18** and press Enter. (You won't see anything while you type - that's normal!)
 28. You should get "ROCKNIX" in big letters - which means it's ready! Finally, we can use the command which was the whole reason we needed to do all this to begin with. Just type the following and press Enter.
-```bash
+```sh
 chmod -R 777 /storage
 ```
 
